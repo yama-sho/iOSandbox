@@ -12,7 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let nextButton = UIButton(frame: CGRect(x: 50, y: 50, width: 100, height: 50))
+        nextButton.setTitle("go next", for: .normal)
+        nextButton.backgroundColor = #colorLiteral(red: 0.7150014356, green: 0.9615237405, blue: 1, alpha: 1)
+        nextButton.addTarget(self, action: #selector(ViewController.goNext(_:)), for: .touchUpInside)
+        view.addSubview(nextButton)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +24,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @objc func goNext(_ sender: UIButton) {
+        let nextVc = NextViewController()
+        nextVc.view.backgroundColor = #colorLiteral(red: 0.7150014356, green: 0.9615237405, blue: 1, alpha: 1)
+        self.present(nextVc, animated: true, completion: nil)
+    }
 
 }
-
