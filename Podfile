@@ -6,6 +6,7 @@ target 'storyBoardLess' do
   use_frameworks!
 
   # Pods for storyBoardLess
+  pod 'MaterialComponents'
 
   target 'storyBoardLessTests' do
     inherit! :search_paths

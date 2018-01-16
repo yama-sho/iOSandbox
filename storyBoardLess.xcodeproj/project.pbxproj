@@ -16,6 +16,7 @@
 		4C9C08102008822B00BC5D58 /* storyBoardLessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9C080F2008822B00BC5D58 /* storyBoardLessTests.swift */; };
 		4C9C081B2008822B00BC5D58 /* storyBoardLessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9C081A2008822B00BC5D58 /* storyBoardLessUITests.swift */; };
 		4C9C08292008842000BC5D58 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9C08282008842000BC5D58 /* NextViewController.swift */; };
+		4C9C0831200D854900BC5D58 /* SubStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C9C0830200D854900BC5D58 /* SubStoryboard.storyboard */; };
 		824FB0B35311A2384AE9EDC0 /* Pods_storyBoardLess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB0DF0FDFAFA5194D29ED77 /* Pods_storyBoardLess.framework */; };
 		F65B67ED2B142E330F429EC0 /* Pods_storyBoardLessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994F790539569265F5DF9482 /* Pods_storyBoardLessUITests.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		4C9C081A2008822B00BC5D58 /* storyBoardLessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyBoardLessUITests.swift; sourceTree = "<group>"; };
 		4C9C081C2008822B00BC5D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C9C08282008842000BC5D58 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		4C9C0830200D854900BC5D58 /* SubStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubStoryboard.storyboard; sourceTree = "<group>"; };
 		4DB775AC864589A8CCEAA9A1 /* Pods-storyBoardLessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storyBoardLessUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-storyBoardLessUITests/Pods-storyBoardLessUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6FB0DF0FDFAFA5194D29ED77 /* Pods_storyBoardLess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_storyBoardLess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FA323EC46E28560A5465E4 /* Pods-storyBoardLess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storyBoardLess.release.xcconfig"; path = "Pods/Target Support Files/Pods-storyBoardLess/Pods-storyBoardLess.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				4C9C07FC2008822A00BC5D58 /* ViewController.swift */,
 				4C9C08282008842000BC5D58 /* NextViewController.swift */,
 				4C9C07FE2008822A00BC5D58 /* Main.storyboard */,
+				4C9C0830200D854900BC5D58 /* SubStoryboard.storyboard */,
 				4C9C08012008822A00BC5D58 /* Assets.xcassets */,
 				4C9C08032008822A00BC5D58 /* LaunchScreen.storyboard */,
 				4C9C08062008822A00BC5D58 /* Info.plist */,
@@ -287,6 +290,7 @@
 			files = (
 				4C9C08052008822A00BC5D58 /* LaunchScreen.storyboard in Resources */,
 				4C9C08022008822A00BC5D58 /* Assets.xcassets in Resources */,
+				4C9C0831200D854900BC5D58 /* SubStoryboard.storyboard in Resources */,
 				4C9C08002008822A00BC5D58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,9 +362,22 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-storyBoardLess/Pods-storyBoardLess-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
