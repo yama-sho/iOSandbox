@@ -12,6 +12,8 @@ class NextAViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var sendLabel: UITextField!
 
+    @IBOutlet weak var goPresentButton: UIButton!
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "NextView" {
 
