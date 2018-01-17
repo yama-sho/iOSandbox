@@ -23,27 +23,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="GoNext"/>
                                 <connections>
-                                    <segue destination="bHg-6q-WRh" kind="show" identifier="NextView" id="1zC-Ea-kUv"/>
+                                    <segue destination="bHg-6q-WRh" kind="show" identifier="NextView" id="bG5-wT-itZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1P1-CR-I3V">
-                                <rect key="frame" x="139" y="289" width="97" height="21"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Send Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tk0-hu-W5y">
+                                <rect key="frame" x="97" y="280" width="181" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.77575977360537229" green="1" blue="0.7990577637729801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="v5f-1Q-RC6"/>
                     </view>
                     <connections>
-                        <outlet property="sendLabel" destination="1P1-CR-I3V" id="LeS-b0-fYP"/>
+                        <outlet property="sendLabel" destination="Tk0-hu-W5y" id="AEe-MX-z4c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNj-g2-tbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="210.40000000000001" y="-173.16341829085459"/>
+            <point key="canvasLocation" x="-108" y="-174.06296851574214"/>
         </scene>
         <!--NextB-->
         <scene sceneID="g6P-UF-tY5">

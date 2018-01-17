@@ -17,7 +17,9 @@ class NextBViewController: UIViewController {
 
         super.viewDidLoad()
 
-        bLabel.text = sendLabel
+        if sendLabel != "" {
+            bLabel.text = sendLabel
+        }
     }
 
     override func didReceiveMemoryWarning() {

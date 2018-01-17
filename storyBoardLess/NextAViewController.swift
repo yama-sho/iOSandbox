@@ -8,9 +8,9 @@
 
 import UIKit
 
-class NextAViewController: UIViewController {
+class NextAViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var sendLabel: UILabel!
+    @IBOutlet weak var sendLabel: UITextField!
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "NextView" {
@@ -26,9 +26,15 @@ class NextAViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        sendLabel.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        sendLabel.resignFirstResponder()
+        return true
+    }
+
 }
